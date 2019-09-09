@@ -1,6 +1,6 @@
 {
   "name": "L2 Firebird Database Enhanced UI",
-  "version": "1.0",
+  "version": "0.1",
   "description": "Make more user friendly list page",
   "content_scripts": [
     {
