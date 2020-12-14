@@ -375,7 +375,7 @@ for (let i = 1, row; i < listTable.rows.length; i++) {
 	rates.add(monsterRate.createMonsterRateFromRow(row, i));
 }
 
-//listTable.remove();
+listTable.remove();
 
 rates.sortBy = "monsterLv";
 rates.renderTable();
