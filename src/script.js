@@ -27,8 +27,8 @@ monsterRate = class {
     }
 
     static extractChance (rowNode) {
-	    let cellText = rowNode.cells[1].innerText;
-        return cellText.substr(0, cellText.length - 1);
+        let cellText = rowNode.cells[1].textContent;
+        return cellText.substr(2, cellText.length - 3);
     }
 
     static extractAmounts (rowNode) {
@@ -375,7 +375,7 @@ for (let i = 1, row; i < listTable.rows.length; i++) {
 	rates.add(monsterRate.createMonsterRateFromRow(row, i));
 }
 
-listTable.remove();
+//listTable.remove();
 
 rates.sortBy = "monsterLv";
 rates.renderTable();
